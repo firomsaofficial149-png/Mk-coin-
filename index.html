@@ -1,67 +1,431 @@
 <!DOCTYPE html>
-<html lang="om">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mk-coin — maallaqa dijitaalaa salphaa fi amanamaa.">
-  <title>Mk-coin | Maallaqa Dijitaalaa</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="navbar">
-    <a class="brand" href="#home"><span class="coin">M</span> Mk-coin</a>
-    <nav>
-      <a href="#home">Mana</a>
-      <a href="#about">Waa'ee Keenya</a>
-      <a href="#features">Faayidaa</a>
-      <a class="nav-button" href="#contact">Nu Qunnami</a>
-    </nav>
-    <button class="menu-button" aria-label="Menuu bani">☰</button>
-  </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MK Coin is a modern digital currency platform built for speed, security, and everyday use."
+    />
+    <title>MK Coin | Digital Finance Reimagined</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="MK Coin home">
+          <span class="brand-mark">M</span>
+          <span>MK Coin</span>
+        </a>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">✨ Fuuldura maallaqa dijitaalaa</p>
-        <h1>Mk-coin waliin gara fuulduraatti tarkaanfadhu.</h1>
-        <p class="hero-text">Maallaqa dijitaalaa salphaa, saffisaa fi amanamaa. Hawaasa keenyaaf carraa haaraa uumuu irratti hojjenna.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#about">Baruu jalqabi</a>
-          <a class="button secondary" href="#features">Faayidaa ilaali</a>
+        <button class="menu-button" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#tokenomics">Tokenomics</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#community">Community</a>
+          <a href="#contact" class="nav-cta">Launch App</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Digital economy for tomorrow</span>
+            <h1>Powering secure, smart, and fast transactions.</h1>
+            <p class="lead">
+              MK Coin is designed for a new generation of digital finance, combining
+              speed, transparency, and community-first growth for real-world value.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#contact">Get Started</a>
+              <a class="button secondary" href="#features">Explore Features</a>
+            </div>
+
+            <ul class="stat-list" aria-label="MK Coin metrics">
+              <li>
+                <strong>1.2M+</strong>
+                <span>Wallet users</span>
+              </li>
+              <li>
+                <strong>99.9%</strong>
+                <span>Uptime</span>
+              </li>
+              <li>
+                <strong>24/7</strong>
+                <span>Market access</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-panel" aria-label="MK Coin overview">
+            <div class="panel-header">
+              <span class="panel-tag">MK</span>
+              <span class="panel-status">Live</span>
+            </div>
+            <div class="coin-visual">
+              <div class="coin-circle">M</div>
+            </div>
+            <div class="panel-metrics">
+              <div>
+                <label>Market Cap</label>
+                <strong>$42.8M</strong>
+              </div>
+              <div>
+                <label>24h Volume</label>
+                <strong>$3.2M</strong>
+              </div>
+            </div>
+            <div class="mini-chart" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section intro">
+        <div class="container narrow">
+          <span class="eyebrow">Why MK Coin</span>
+          <h2>Built for a digital-first financial future.</h2>
+          <p>
+            MK Coin brings together fast settlement, secure storage, and transparent
+            ecosystem growth. It is designed to support both everyday users and
+            ambitious community-driven projects.
+          </p>
+        </div>
+      </section>
+
+      <section id="features" class="section features">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Core features</span>
+            <h2>Everything you need to move value with confidence.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon">⚡</div>
+              <h3>Instant Transfers</h3>
+              <p>Send and settle value quickly with low-latency processing across users.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon">🔐</div>
+              <h3>Secure Infrastructure</h3>
+              <p>Built with trusted security principles to protect wallets, data, and access.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon">🌍</div>
+              <h3>Global Access</h3>
+              <p>Enable borderless participation with a user-friendly experience for all.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon">📈</div>
+              <h3>Growth Ecosystem</h3>
+              <p>Designed to scale with community utility, liquidity, and long-term value.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="tokenomics" class="section tokenomics">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Tokenomics</span>
+            <h2>A balanced model designed for sustainable growth.</h2>
+          </div>
+
+          <div class="token-grid">
+            <div class="token-card">
+              <h3>Total Supply</h3>
+              <strong>1,000,000,000 MK</strong>
+            </div>
+            <div class="token-card">
+              <h3>Community</h3>
+              <strong>45%</strong>
+            </div>
+            <div class="token-card">
+              <h3>Liquidity</h3>
+              <strong>25%</strong>
+            </div>
+            <div class="token-card">
+              <h3>Development</h3>
+              <strong>20%</strong>
+            </div>
+            <div class="token-card">
+              <h3>Partnerships</h3>
+              <strong>10%</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="roadmap" class="section roadmap">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Roadmap</span>
+            <h2>Building the next stage of the ecosystem.</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="phase">Phase 1</span>
+              <h3>Launch</h3>
+              <p>Website release, community onboarding, and initial liquidity setup.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="phase">Phase 2</span>
+              <h3>Expansion</h3>
+              <p>Wallet optimization, reward programs, and strategic ecosystem partnerships.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="phase">Phase 3</span>
+              <h3>Scale</h3>
+              <p>Broader utility integration, market tools, and ecosystem adoption.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="community" class="section community">
+        <div class="container community-box">
+          <div>
+            <span class="eyebrow">Community</span>
+            <h2>Join a project powered by people.</h2>
+          </div>
+          <a class="button primary" href="#contact">Join the Movement</a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="#home" class="brand footer-brand">
+            <span class="brand-mark">M</span>
+            <span>MK Coin</span>
+          </a>
+          <p>Reimagining digital finance with speed, trust, and community impact.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="mailto:hello@mkcoin.example">hello@mkcoin.example</a>
         </div>
       </div>
-      <div class="hero-card" aria-label="Kaardii Mk-coin">
-        <div class="card-top"><span>Mk-coin</span><span>◈</span></div>
-        <div class="card-symbol">M</div>
-        <p class="card-label">Gatii dijitaalaa</p>
-        <strong>Salphaa · Saffisaa · Amanamaa</strong>
+      <div class="container copyright">
+        <p>© <span id="year"></span> MK Coin. All rights reserved.</p>
       </div>
-    </section>
+    </footer>
 
-    <section id="about" class="section about">
-      <p class="eyebrow">Waa'ee Mk-coin</p>
-      <h2>Teknooloojii nama hundaaf hojjetu.</h2>
-      <p>Mk-coin appii gaarii fi furmaata dijitaalaa ta'ee, namoonni maallaqa isaanii karaa amansiisaa fi ifa ta'een fayyadamuuf gargaara.</p>
-    </section>
-
-    <section id="features" class="section">
-      <p class="eyebrow">Maaliif Mk-coin?</p>
-      <h2>Faayidaa ijoo</h2>
-      <div class="features-grid">
-        <article class="feature"><span>⚡</span><h3>Saffisa</h3><p>Hojiiwwan kee yeroo gabaabaa keessatti raawwadhu.</p></article>
-        <article class="feature"><span>🔒</span><h3>Amanamummaa</h3><p>Daataa fi qabeenya kee eeguuf sirna amansiisaa.</p></article>
-        <article class="feature"><span>🌍</span><h3>Hawaasa</h3><p>Namoota walitti fiduun carraa haaraa uuma.</p></article>
-      </div>
-    </section>
-
-    <section id="contact" class="cta">
-      <h2>Har'a nu waliin jalqabi.</h2>
-      <p>Mk-coin hakkında odeeffannoo dabalataa argachuuf nu qunnami.</p>
-      <a class="button primary" href="mailto:info@mk-coin.example">Nu qunnami</a>
-    </section>
-  </main>
-
-  <footer><p>© <span id="year"></span> Mk-coin. Mirgi hundi seeraan eegama.</p></footer>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
