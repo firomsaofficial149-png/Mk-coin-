@@ -3,429 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="MK Coin is a modern digital currency platform built for speed, security, and everyday use."
-    />
-    <title>MK Coin | Digital Finance Reimagined</title>
+    <meta name="description" content="A simple, fast to-do list with local storage." />
+    <title>MK Tasks | To-Do List</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a href="#home" class="brand" aria-label="MK Coin home">
-          <span class="brand-mark">M</span>
-          <span>MK Coin</span>
-        </a>
-
-        <button class="menu-button" aria-label="Toggle menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <nav class="main-nav" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#features">Features</a>
-          <a href="#tokenomics">Tokenomics</a>
-          <a href="#roadmap">Roadmap</a>
-          <a href="#community">Community</a>
-          <a href="#contact" class="nav-cta">Launch App</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="home">
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <span class="eyebrow">Digital economy for tomorrow</span>
-            <h1>Powering secure, smart, and fast transactions.</h1>
-            <p class="lead">
-              MK Coin is designed for a new generation of digital finance, combining
-              speed, transparency, and community-first growth for real-world value.
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#contact">Get Started</a>
-              <a class="button secondary" href="#features">Explore Features</a>
-            </div>
-
-            <ul class="stat-list" aria-label="MK Coin metrics">
-              <li>
-                <strong>1.2M+</strong>
-                <span>Wallet users</span>
-              </li>
-              <li>
-                <strong>99.9%</strong>
-                <span>Uptime</span>
-              </li>
-              <li>
-                <strong>24/7</strong>
-                <span>Market access</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="hero-panel" aria-label="MK Coin overview">
-            <div class="panel-header">
-              <span class="panel-tag">MK</span>
-              <span class="panel-status">Live</span>
-            </div>
-            <div class="coin-visual">
-              <div class="coin-circle">M</div>
-            </div>
-            <div class="panel-metrics">
-              <div>
-                <label>Market Cap</label>
-                <strong>$42.8M</strong>
-              </div>
-              <div>
-                <label>24h Volume</label>
-                <strong>$3.2M</strong>
-              </div>
-            </div>
-            <div class="mini-chart" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section intro">
-        <div class="container narrow">
-          <span class="eyebrow">Why MK Coin</span>
-          <h2>Built for a digital-first financial future.</h2>
-          <p>
-            MK Coin brings together fast settlement, secure storage, and transparent
-            ecosystem growth. It is designed to support both everyday users and
-            ambitious community-driven projects.
-          </p>
-        </div>
-      </section>
-
-      <section id="features" class="section features">
-        <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Core features</span>
-            <h2>Everything you need to move value with confidence.</h2>
-          </div>
-
-          <div class="feature-grid">
-            <article class="feature-card">
-              <div class="icon">⚡</div>
-              <h3>Instant Transfers</h3>
-              <p>Send and settle value quickly with low-latency processing across users.</p>
-            </article>
-
-            <article class="feature-card">
-              <div class="icon">🔐</div>
-              <h3>Secure Infrastructure</h3>
-              <p>Built with trusted security principles to protect wallets, data, and access.</p>
-            </article>
-
-            <article class="feature-card">
-              <div class="icon">🌍</div>
-              <h3>Global Access</h3>
-              <p>Enable borderless participation with a user-friendly experience for all.</p>
-            </article>
-
-            <article class="feature-card">
-              <div class="icon">📈</div>
-              <h3>Growth Ecosystem</h3>
-              <p>Designed to scale with community utility, liquidity, and long-term value.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="tokenomics" class="section tokenomics">
-        <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Tokenomics</span>
-            <h2>A balanced model designed for sustainable growth.</h2>
-          </div>
-
-          <div class="token-grid">
-            <div class="token-card">
-              <h3>Total Supply</h3>
-              <strong>1,000,000,000 MK</strong>
-            </div>
-            <div class="token-card">
-              <h3>Community</h3>
-              <strong>45%</strong>
-            </div>
-            <div class="token-card">
-              <h3>Liquidity</h3>
-              <strong>25%</strong>
-            </div>
-            <div class="token-card">
-              <h3>Development</h3>
-              <strong>20%</strong>
-            </div>
-            <div class="token-card">
-              <h3>Partnerships</h3>
-              <strong>10%</strong>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="roadmap" class="section roadmap">
-        <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Roadmap</span>
-            <h2>Building the next stage of the ecosystem.</h2>
-          </div>
-
-          <div class="timeline">
-            <div class="timeline-item">
-              <span class="phase">Phase 1</span>
-              <h3>Launch</h3>
-              <p>Website release, community onboarding, and initial liquidity setup.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="phase">Phase 2</span>
-              <h3>Expansion</h3>
-              <p>Wallet optimization, reward programs, and strategic ecosystem partnerships.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="phase">Phase 3</span>
-              <h3>Scale</h3>
-              <p>Broader utility integration, market tools, and ecosystem adoption.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="community" class="section community">
-        <div class="container community-box">
+    <main class="app-shell">
+      <section class="app-card" aria-labelledby="app-title">
+        <header class="app-header">
           <div>
-            <span class="eyebrow">Community</span>
-            <h2>Join a project powered by people.</h2>
+            <p class="kicker">MK COIN / PRODUCTIVITY</p>
+            <h1 id="app-title">My to-do list<span>.</span></h1>
+            <p class="subtitle">Keep your priorities clear and your progress moving.</p>
           </div>
-          <a class="button primary" href="#contact">Join the Movement</a>
+          <div class="date-badge" aria-label="Today's date">
+            <span id="day-number"></span>
+            <span id="month-name"></span>
+          </div>
+        </header>
+
+        <form id="task-form" class="task-form">
+          <label class="sr-only" for="task-input">Add a task</label>
+          <input id="task-input" name="task" type="text" maxlength="120" placeholder="What needs to be done?" autocomplete="off" required />
+          <button class="add-button" type="submit" aria-label="Add task">+</button>
+        </form>
+
+        <div class="toolbar">
+          <div class="filters" role="group" aria-label="Filter tasks">
+            <button class="filter-button active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="active">Active</button>
+            <button class="filter-button" type="button" data-filter="completed">Completed</button>
+          </div>
+          <button id="clear-completed" class="text-button" type="button">Clear completed</button>
         </div>
+
+        <div id="empty-state" class="empty-state">
+          <div class="empty-icon">✓</div>
+          <h2>Nothing here yet</h2>
+          <p>Add a task above and make today count.</p>
+        </div>
+
+        <ul id="task-list" class="task-list" aria-live="polite"></ul>
+
+        <footer class="app-footer">
+          <span id="task-count">0 tasks left</span>
+          <span class="storage-note"><span class="status-dot"></span> Saved on this device</span>
+        </footer>
       </section>
     </main>
-
-    <footer id="contact" class="site-footer">
-      <div class="container footer-wrap">
-        <div>
-          <a href="#home" class="brand footer-brand">
-            <span class="brand-mark">M</span>
-            <span>MK Coin</span>
-          </a>
-          <p>Reimagining digital finance with speed, trust, and community impact.</p>
-        </div>
-        <div class="footer-links">
-          <a href="#about">About</a>
-          <a href="#features">Features</a>
-          <a href="#roadmap">Roadmap</a>
-          <a href="mailto:hello@mkcoin.example">hello@mkcoin.example</a>
-        </div>
-      </div>
-      <div class="container copyright">
-        <p>© <span id="year"></span> MK Coin. All rights reserved.</p>
-      </div>
-    </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
