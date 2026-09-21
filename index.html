@@ -3,57 +3,204 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A simple, fast to-do list with local storage." />
-    <title>MK Tasks | To-Do List</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Mk Coin | Digital Finance Made Simple</title>
+    <meta
+      name="description"
+      content="Mk Coin is a modern digital finance website with secure transfers, smart tracking, and trusted growth tools."
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="app-shell">
-      <section class="app-card" aria-labelledby="app-title">
-        <header class="app-header">
-          <div>
-            <p class="kicker">MK COIN / PRODUCTIVITY</p>
-            <h1 id="app-title">My to-do list<span>.</span></h1>
-            <p class="subtitle">Keep your priorities clear and your progress moving.</p>
-          </div>
-          <div class="date-badge" aria-label="Today's date">
-            <span id="day-number"></span>
-            <span id="month-name"></span>
-          </div>
-        </header>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="Mk Coin home">
+          <span class="brand-mark">M</span>
+          <span>Mk Coin</span>
+        </a>
 
-        <form id="task-form" class="task-form">
-          <label class="sr-only" for="task-input">Add a task</label>
-          <input id="task-input" name="task" type="text" maxlength="120" placeholder="What needs to be done?" autocomplete="off" required />
-          <button class="add-button" type="submit" aria-label="Add task">+</button>
-        </form>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+        </nav>
 
-        <div class="toolbar">
-          <div class="filters" role="group" aria-label="Filter tasks">
-            <button class="filter-button active" type="button" data-filter="all">All</button>
-            <button class="filter-button" type="button" data-filter="active">Active</button>
-            <button class="filter-button" type="button" data-filter="completed">Completed</button>
+        <a class="nav-btn" href="contact.html">Get Started</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-wrap">
+          <div class="hero-copy">
+            <div class="eyebrow">Trusted digital growth</div>
+            <h1>Unlock faster value with Mk Coin.</h1>
+            <p class="lead">
+              Mk Coin helps people and businesses move money smarter, safer, and faster through
+              secure digital finance tools and modern crypto-powered experiences.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="pricing.html">Start Now</a>
+              <a class="btn btn-secondary" href="about.html">Learn More</a>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <strong>2.4M+</strong>
+                <span>Wallet Users</span>
+              </div>
+              <div class="stat">
+                <strong>$8.7B</strong>
+                <span>Volume Tracked</span>
+              </div>
+              <div class="stat">
+                <strong>99.99%</strong>
+                <span>Uptime</span>
+              </div>
+            </div>
           </div>
-          <button id="clear-completed" class="text-button" type="button">Clear completed</button>
+
+          <div class="hero-card" aria-label="Portfolio overview card">
+            <div class="mini-chart">
+              <div class="label">Portfolio Growth</div>
+              <div class="bars" aria-hidden="true">
+                <span style="height: 56%"></span>
+                <span style="height: 68%"></span>
+                <span style="height: 82%"></span>
+                <span style="height: 70%"></span>
+                <span style="height: 92%"></span>
+                <span style="height: 100%"></span>
+              </div>
+            </div>
+
+            <div class="balance-box">
+              <div class="label">Available Balance</div>
+              <div class="amount">$24,842.60</div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div id="empty-state" class="empty-state">
-          <div class="empty-icon">✓</div>
-          <h2>Nothing here yet</h2>
-          <p>Add a task above and make today count.</p>
+      <section id="features">
+        <div class="container">
+          <div class="section-head">
+            <h2>Everything your digital finance needs</h2>
+            <p>Simple tools for secure transfers, smart investing, and seamless portfolio growth.</p>
+          </div>
+
+          <div class="features">
+            <article class="feature">
+              <div class="icon">⚡</div>
+              <h3>Instant Transfers</h3>
+              <p>Send and receive funds in seconds with minimal delay and maximum visibility.</p>
+            </article>
+
+            <article class="feature">
+              <div class="icon">🔒</div>
+              <h3>Secure Protection</h3>
+              <p>Multi-layered security and encrypted transactions keep your money protected.</p>
+            </article>
+
+            <article class="feature">
+              <div class="icon">📈</div>
+              <h3>Smart Tracking</h3>
+              <p>See portfolio performance, transaction insights, and spending trends in real time.</p>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <ul id="task-list" class="task-list" aria-live="polite"></ul>
+      <section class="page-section" id="about">
+        <div class="container about">
+          <div class="about-card">
+            <div class="eyebrow">About Mk Coin</div>
+            <h2>Built for modern finance.</h2>
+            <p>
+              Mk Coin is designed for users who want a modern, confident, and accessible way to
+              manage digital assets. We combine reliability, insight, and accessibility into one
+              platform.
+            </p>
 
-        <footer class="app-footer">
-          <span id="task-count">0 tasks left</span>
-          <span class="storage-note"><span class="status-dot"></span> Saved on this device</span>
-        </footer>
+            <ul class="check-list">
+              <li><span class="check">✓</span><span>Real-time finance dashboards for active users and businesses.</span></li>
+              <li><span class="check">✓</span><span>Transparent fees and intuitive wallet management.</span></li>
+              <li><span class="check">✓</span><span>Fast onboarding for personal and professional use cases.</span></li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <div class="label">Why choose us</div>
+            <h3>Accessible, scalable, and built to grow.</h3>
+            <p>
+              From everyday users to digital-first businesses, Mk Coin offers the infrastructure needed
+              for growing financial operations without complexity.
+            </p>
+
+            <div class="stats stats-small">
+              <div class="stat">
+                <strong>24/7</strong>
+                <span>Support</span>
+              </div>
+              <div class="stat">
+                <strong>150+</strong>
+                <span>Countries</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section" id="pricing">
+        <div class="container">
+          <div class="section-head">
+            <h2>Simple plans for every stage</h2>
+            <p>Choose the plan that fits your needs and scale when you are ready.</p>
+          </div>
+
+          <div class="pricing">
+            <div class="price-card">
+              <h3>Starter</h3>
+              <div class="price">$0 <small>/ month</small></div>
+              <ul>
+                <li>Basic wallet access</li>
+                <li>1 transaction dashboard</li>
+                <li>Standard support</li>
+              </ul>
+              <a class="btn btn-secondary" href="contact.html">Get Started</a>
+            </div>
+
+            <div class="price-card featured">
+              <div class="tag">Popular</div>
+              <h3>Pro</h3>
+              <div class="price">$29 <small>/ month</small></div>
+              <ul>
+                <li>Advanced analytics</li>
+                <li>Unlimited transactions</li>
+                <li>Priority customer support</li>
+              </ul>
+              <a class="btn btn-primary" href="contact.html">Try Pro</a>
+            </div>
+
+            <div class="price-card">
+              <h3>Business</h3>
+              <div class="price">$99 <small>/ month</small></div>
+              <ul>
+                <li>Multi-user access</li>
+                <li>Custom automation</li>
+                <li>Dedicated account manager</li>
+              </ul>
+              <a class="btn btn-secondary" href="contact.html">Talk to Sales</a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <script src="script.js"></script>
+
+    <footer>
+      <div class="container footer-wrap">
+        © 2026 Mk Coin. All rights reserved.
+      </div>
+    </footer>
   </body>
 </html>
