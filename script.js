@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   form.addEventListener('submit', (event) => {
     event.preventDefault();
-    alert('Thank you! Your message has been received.');
+    alert('Galatoomi! Ergaan kee nu gaheera.');
     form.reset();
   });
 });
